@@ -416,6 +416,42 @@ header .nav__list button {
 footer {
   width: 100%;
   height: auto;
+  margin-top: 400px;
+  padding: 70px 0;
+  background: var(--bg, #212529);
+  color: #fff;
+}
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+footer .wrapper ul {
+  list-style-type: none;
+  width: 300px;
+}
+footer .wrapper ul p {
+  margin-bottom: 14px;
+  color: #AFAFAF;
+}
+footer .wrapper ul a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .wrapper .f_social {
+  display: flex;
+  gap: 10px;
+  margin-top: 27px;
+}
+
+.f_bottom {
+  background: var(--bg-light, #272B30);
+  color: #FFFFFF;
+}
+.f_bottom .fb_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
 }
 
 .intro {
@@ -490,6 +526,7 @@ footer {
   margin-bottom: 100px;
   color: var(--white, #F3F3F3);
   font-size: 18px;
+  margin-left: -10px;
 }
 
 .dry {
@@ -545,4 +582,98 @@ footer {
   color: var(--white, #F3F3F3);
   font-size: 20px;
   font-weight: 600;
+}
+
+.driving {
+  background: var(--bg-light, #272B30);
+}
+.driving button {
+  padding: 10px 30px;
+  background: transparent;
+  border: 2px solid var(--white, #F3F3F3);
+  color: #F3F3F3;
+  margin-top: 35px;
+}
+.driving .careers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #521F84;
+  color: #F3F3F3;
+  background-image: url(../../assets/images/image\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+.driving .careers h2 {
+  margin-bottom: 40px;
+}
+
+.why {
+  color: #fff;
+}
+.why h2 {
+  margin-bottom: 20px;
+}
+
+.driving_txts {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 109px;
+  padding-bottom: 120px;
+}
+.driving_txts .all_li {
+  list-style-type: square;
+  color: #04FF14;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.driving_txts .all_li p {
+  color: #fff;
+}
+
+.carrer_dr {
+  padding-left: 120px;
+}
+.carrer_dr .driving_pi {
+  color: #A466E1;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%;
+  /* 32.4px */
+}
+
+.partners {
+  padding: 120px 0;
+}
+.partners h3 {
+  text-align: center;
+  color: var(--white, #F3F3F3);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  /* 31.2px */
+  margin-bottom: 50px;
+}
+
+.all_logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.driving_man img {
+  object-fit: cover;
+}
+
+.map {
+  position: relative;
+}
+.map_sect img {
+  position: absolute;
+  left: 0;
 }

@@ -1,0 +1,11 @@
+.map {
+  position: relative;
+
+  &_sect {
+
+    & img {
+      position: absolute;
+      left: 0;
+    }
+  }
+}
