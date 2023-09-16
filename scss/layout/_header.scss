@@ -1,0 +1,61 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.40);
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 30px;
+
+        &_left {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            .nav__social {
+                display: flex;
+                list-style-type: none;
+                gap: 10px;
+            }
+
+            .phone {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            list-style-type: none;
+
+            & select {
+                background: transparent;
+                border: none;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            & a {
+                text-decoration: none;
+            }
+
+            & button {
+                padding-top: 33px;
+                padding-bottom: 32px;
+                padding-left: 30px;
+                padding-right: 30px;
+                background: #6A369C;
+                border: #6A369C;
+            }
+        }
+    }
+}

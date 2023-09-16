@@ -1,0 +1,39 @@
+.about {
+  background: var(--bg, #212529);
+
+  &_one {
+    display: flex;
+    background: var(--bg, #212529);
+    color: #F3F3F3;
+
+    & .about_p {
+      // max-width;
+      padding: 111px 84px 112px 230px;
+
+      & p {
+        width: 620px;
+        margin-top: 25px;
+      }
+    }
+
+    & .about_img {
+      max-width: 50%;
+
+      & img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+
+    }
+
+    & p {
+      margin-bottom: 40px;
+    }
+
+    & .about_read {
+      color: var(--logo-light-green, #04FF14);
+      font-size: 18px;
+    }
+  }
+}

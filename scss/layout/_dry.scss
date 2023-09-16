@@ -1,0 +1,32 @@
+.dry {
+  background: var(--bg-light, #272B30);
+
+  & .imqges_3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0;
+
+    & .image1 {
+      padding: 30px;
+      width: 450px;
+      background: #212529;
+
+      & h2 {
+        color: var(--white, #F3F3F3);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      & p {
+        color: var(--white, #F3F3F3);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        padding: 20px 0 30px 0;
+      }
+    }
+  }
+}
