@@ -1,6 +1,11 @@
 .driving {
   background: var(--bg-light, #272B30);
 
+  .list {
+    display: flex;
+    column-gap: 110px;
+  }
+
   & button {
     padding: 10px 30px;
     background: transparent;
@@ -39,7 +44,8 @@
 
 .driving_txts {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 100%;
   padding-top: 109px;
   padding-bottom: 120px;
 
@@ -75,6 +81,7 @@
 
 .partners {
   padding: 120px 0;
+
   & h3 {
     text-align: center;
     color: var(--white, #F3F3F3);
@@ -93,6 +100,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .driving_man {
@@ -100,4 +108,84 @@
   & img {
     object-fit: cover;
   }
+}
+
+@media only screen and (max-width: 890px) {
+  .driving_txts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 109px;
+    padding-bottom: 120px;
+
+    & .all_li {
+      list-style-type: square;
+      color: #04FF14;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      & p {
+        color: #fff;
+      }
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+    column-gap: 110px;
+    margin-top: 30px;
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  .careers {
+    display: flex;
+    flex-direction: column-reverse;
+
+    & .carrer_dr {
+      padding-left: 0;
+      padding-top: 20px;
+      padding-bottom: 70px;
+      width: 100%;
+      padding-left: 20px;
+
+      & .driving_pi {
+        color: #A466E1;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 180%;
+        /* 32.4px */
+      }
+    }
+
+    .driving_man {
+
+      & img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 110px;
+  }
+
+  .all_logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 }

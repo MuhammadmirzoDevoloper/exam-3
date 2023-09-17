@@ -17,7 +17,7 @@
         color: var(--white, #F3F3F3);
         font-size: 20px;
         font-weight: 500;
-        width: 570px;
+        max-width: 570px;
         line-height: 130%;
         margin-top: 20px;
         margin-bottom: 24px;
@@ -28,6 +28,45 @@
         color: var(--white, #F3F3F3);
         font-size: 20px;
         font-weight: 600;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .our_mission {
+    background-image: url(../../assets/images/Rectangle\ 124.png);
+    padding: 104px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .mission {
+      & .long_image {
+        & h2 {
+          color: var(--white, #F3F3F3);
+          font-size: 36px;
+          font-weight: 700;
+          margin-top: 220px;
+          text-align: center;
+        }
+
+        & p {
+          color: var(--white, #F3F3F3);
+          font-size: 20px;
+          font-weight: 500;
+          max-width: 570px;
+          line-height: 130%;
+          margin-top: 20px;
+          margin-bottom: 42px;
+          text-align: center;
+        }
+
+        & h3 {
+          color: var(--white, #F3F3F3);
+          font-size: 20px;
+          font-weight: 600;
+          text-align: center;
+        }
       }
     }
   }
